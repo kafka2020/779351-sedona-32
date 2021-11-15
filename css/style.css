@@ -1,0 +1,44 @@
+/* Fonts */
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/ptsans-400.woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url(/fonts/ptsans-700.woff2);
+  font-display: swap;
+}
+
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --basic-dark: #333333;
+  --basic-gray: #E5E5E5;
+  --basic-light: #F2F2F2;
+  --basic-white: #FFFFFF;
+
+  --warm-light: #756257;
+  --warm-dark: #615048;
+  --neutral-light: #7DB54F;
+  --neutral-dark: #6C9E42;
+  --cold-light: #83B3D3;
+  --cold-light20: rgba(131, 179, 211, 0.2);
+  --cold-light12: rgba(131, 179, 211, 0.12);
+  --cold-dark: #68A2CA;
+  --status-error: #FF5757;
+  --status-warning: #FD922E;
+  --status-success: #7DB550;
+}
+
+/* Global */
+ .page-body {
+   font-family: "PT Sans", sans-serif;
+ }
