@@ -4,7 +4,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url(/fonts/ptsans-400.woff2);
+  src: url("/fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -12,7 +12,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url(/fonts/ptsans-700.woff2);
+  src: url("/fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -41,17 +41,21 @@
 /* Global */
 
 .page-body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
   font-family: "PT Sans", sans-serif;
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
   color: var(--basic-black);
   background-color: var(--basic-white);
 }
 
+/* Buttons */
+
 .button {
   font-family: inherit;
-  font-size: 16px;
-  line-height: 21px;
   font-weight: 700;
   text-align: center;
   color: var(--basic-white);
@@ -60,16 +64,36 @@
   text-transform: uppercase;
 }
 
+.button-huge {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.button-large {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.button-medium {
+  font-size: 16px;
+  line-height: 21px;
+}
+
 .button-small {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.button-main {
   background-color: var(--warm-light);
 }
 
-.button-special {
+.button-submain {
   background-color: var(--cold-light);
 }
 
-.button-special-active {
- background-color: var(--neutral-light);
+.button-success {
+	background-color: var(--neutral-light);
 }
 
 .fake-button {
@@ -82,14 +106,12 @@
   text-decoration: none;
 }
 
-.show-more {
-  font-size: 20px;
-  line-height: 26px;
-}
-
 /* Pages */
 
 .navigation-link {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 26px;
   font-weight: 700;
   text-align: center;
   color: inherit;
@@ -99,6 +121,7 @@
 /* Intro */
 
 .intro {
+  background-color: var(--cold-dark);
   background-image:
     url(/img/index-background.jpg),
     url(/img/divider.svg);
@@ -120,6 +143,7 @@
   font-size: 22px;
   line-height: 36px;
   text-align: center;
+  color: var(--basic-dark);
 }
 
 .features-item-title {
@@ -152,16 +176,21 @@
   color: var(--basic-dark);
 }
 
-.foo-dark-bg {
+.features-item-wrap {
   color: var(--basic-white);
   background-color: var(--cold-light);
 }
 
-.foo-light20-bg {
+.cold-dark-bg {
+  color: var(--basic-white);
+  background-color: var(--cold-light);
+}
+
+.cold-light20-bg {
   background-color: var(--cold-light20);
 }
 
-.foo-light12-bg {
+.cold-light12-bg {
   background-color: var(--cold-light12);
 }
 
@@ -266,6 +295,7 @@
 }
 
 .breadcrumbs-link {
+  font-size: 16px;
   color: inherit;
 }
 
@@ -286,6 +316,7 @@
   font-size: 30px;
   line-height: 39px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 /* Sorting */
